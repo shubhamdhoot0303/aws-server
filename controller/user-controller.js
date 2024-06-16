@@ -1,4 +1,16 @@
 import User from '../schema/user-schema.js';
+
+
+
+
+export const welcome = async ( req , res ) =>{
+    
+   try{
+         res.status(201).json({message:"welcome to backend"});
+       }
+   catch(error)
+       {  res.status(401).json({ message:error.message })  };
+}
 export const addUser = async ( req , res ) =>{
      const user = req.body;
      const newUser =  new User(user);

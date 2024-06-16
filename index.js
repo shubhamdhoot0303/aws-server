@@ -16,7 +16,7 @@ app.use('/',Routes);
 
 
 
-  Connection();
+  // Connection();
   
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
